@@ -64,7 +64,6 @@ body {
     bottom: 40px;
     left: 90px;
     width: 225px;
-    height: 100px;
 }
 
 form input {
@@ -90,7 +89,44 @@ button {
     border: none;
     border-radius: 5px;
     box-shadow: 0px 3px 10px 0px black;
+    transition: 0.5s all;
 }
 button:hover {
     cursor: pointer;
+    transform: scale(1.1);
+}
+
+@media(max-width:700px) {
+    .content {
+        width: 360px;
+        height: 200px;
+    }
+    .content-box {
+        left: 55px;
+        width: 250px;
+        height: 150px;
+    }
+    .left-eye {
+        top: 25px;
+        left: 60px;
+        width: 25px;
+        height: 25px;
+    }
+    .right-eye {
+        top: 25px;
+        right: 60px;
+        width: 25px;
+        height: 25px;
+    }
+    .inputs {
+        width: 125px;
+        left: 65px;
+        bottom: 15px;
+    }
+    form input {
+        height: 20px;
+    }
+    button {
+        padding: 10px 30px;
+    }
 }
